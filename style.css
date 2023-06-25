@@ -1,0 +1,409 @@
+*{
+    margin : 0;
+    padding : 0;
+    box-sizing : border-box;
+}
+
+body{
+    position: relative;
+    background-color: aliceblue;
+    padding:0;
+    margin:0;
+}
+
+.navbar {
+    position: fixed;
+    top: 0;
+    left: 0;
+    width: 100%;
+  }
+  
+ .navbar img {
+    width: 100%;
+    height: auto;
+    }
+
+.header{
+  background-color: #099e92;
+  width:100%;
+  margin-top: 20px;
+  height: 60px;
+  position:fixed;
+  z-index: 10;
+}
+
+input[type="checkbox"] {
+  display: none;
+}
+.main{
+  height:100%;
+  margin-top:60px;
+  padding:10px 50px;
+}
+
+#sidebarmenu{
+  height: 100%;
+  position:fixed;
+  left:0;
+  top: 80px;
+  width:200px;
+  margin-top: 60px;
+  background-color: #28cbbe;
+  transform : translateX(-250px);
+  transition : transform 250ms ease-in-out
+}
+#opensidebarmenu:checked ~ #sidebarmenu{
+  transform: translateX(0);
+}
+
+.menu{
+  list-style: none;
+  padding:0;
+  margin: 0;
+}
+
+.menu li{
+  color:#fff;
+  border-bottom: 1px solid rgba(255, 255, 255 ,0.10);
+}
+
+.menu li a{
+  color:#fff;
+  display: block;
+  text-decoration: none;
+  text-transform: uppercase;
+  padding:20px;
+}
+.sidebarToggle{
+  width: 22px;
+  height  :22px;
+  position :absolute;
+  z-index: 20;
+  top : 22px;
+  left: 15px;
+  cursor: pointer;
+}
+
+.spinner{
+  height : 3px;
+  background-color: black;
+  transition: all 0.3s;
+  z-index: 30;
+}
+
+.spinner.mid,
+.spinner.bottom{
+  background-color: black;
+  margin-top: 3px;
+}
+#opensidebarmenu:checked ~ .sidebarToggle > .spinner.mid{
+  opacity: 0;
+}
+#opensidebarmenu:checked ~ .sidebarToggle > .spinner.top{
+  transform: rotate(135deg);
+  margin-top: 8px;
+}
+#opensidebarmenu:checked ~ .sidebarToggle > .spinner.bottom{
+  transform: rotate(-135deg);
+  margin-top: -9px;
+}
+
+.horizontalmenu{
+   z-index: 20;
+   margin-left: 40px;
+   margin-top: 20px;
+   
+}
+
+nav ul{
+  float:left;
+  margin-left:8opx;
+}
+
+nav ul li{
+  display: inline-block;
+  margin-left: 20px;
+}
+
+nav ul li a{
+  color:white;
+  font-size:17px;
+  text-transform: uppercase;
+  padding: 7px 10px;
+  border-radius: 3px;
+  text-decoration: none;
+}
+
+a:hover{
+  background-color: #034843;
+  transition: .5s;
+}
+
+.Links{
+  margin-top: 80px;
+  margin-left:250px;
+  background-color: #f0c2c2;
+  border-style: inset;
+  border-color: red;
+  width:83%;
+  height: 40px;
+  position:fixed;
+  border-radius: 3px;
+  padding-left: 10px;
+  padding-top: 10px;
+
+}
+.button{
+  margin-top: 135px;
+  display: inline-flex;
+}
+#button1 {
+  background-color: #0e958a;
+  border: none;
+  color: black;
+  padding: 10px 20px;
+  text-align: center;
+  text-decoration: none;
+  margin-left: 80px;
+  cursor: pointer;
+  border-radius: 16px;
+}
+#button2 {
+  background-color: #0e958a;
+  border: none;
+  color: black;
+  padding: 10px 20px;
+  text-align: center;
+  text-decoration: none;
+  margin-left: 550px;
+  cursor: pointer;
+  border-radius: 16px;
+}
+
+/*Login */
+
+.Login {
+  margin-top: 80px;
+  margin-left:250px;
+  background-color: #099e92;
+  width:83%;
+  height: 40px;
+  position:fixed;
+  border-radius: 3px;
+}
+
+.Login p{
+  padding: 10px;
+  font-weight: 800;
+  color:white;
+  size: 20px;
+}
+
+.Credeintials{
+  margin-top: 150px;
+  margin-left: 350px;
+}
+
+.Credeintials .form{
+    padding:6px;
+    font-size:17px;
+    font-family:sans-serif ;
+}
+
+.Credeintials .form .form-control{
+    border-radius: 3px;
+    border-color: #28cbbe;
+    border-width: 1px;
+    width:100px;
+    height:20px;
+}
+
+.btn{
+    margin-left: 150px;
+    margin-top: 20px;
+    padding: 10px;
+    border-radius: 5px;
+    border-color: #28cbbe;
+    border-width: 1px;
+    background-color: #099e92;
+}
+
+
+/* Signup */
+.signup {
+	margin-top: 80px;
+	margin-left:240px;
+	background-color: #099e92;
+	width:100%;
+	height: 40px;
+	position:fixed;
+	border-radius: 3px;
+  }
+  
+  .signup p{
+	padding: 10px;
+	font-weight: 800;
+	color:white;
+	size: 20px;
+  }
+  
+  .Credentials{
+	margin-top: 150px;
+	margin-left: 350px;
+	}
+  
+  .Credentials .form-group{
+	  /* display: inline-flex; */
+	  padding:6px;
+	  font-size:20px;
+	  font-family:sans-serif ;
+  	}
+  
+  .Credentials .form-group .form-control{
+	  border-radius: 3px;
+	  border-color: #28cbbe;
+	  border-width: 1px;
+	  max-width: auto auto;
+	  width:100px;
+	  height:20px;
+  	}
+  
+  .btn{
+	  max-width: 250px;
+	  margin-left: 150px;
+	  margin-top: 20px;
+	  padding: 10px;
+	  border-radius: 5px;
+	  border-color: #28cbbe;
+	  border-width: 1px;
+	  background-color: #099e92;
+  	}
+
+
+/* profile */
+
+.profile1 {
+  margin-top: 120px;
+  margin-left:155px;
+  background-color: #099e92;
+  width:83%;
+  height: 40px;
+  position:fixed;
+  border-radius: 3px;
+}
+
+.profile1 p{
+	padding: 10px;
+	font-weight: 800;
+	color:white;
+	size: 20px;
+}
+
+.btn1{
+  margin-left: 150px;
+  margin-top: 20px;
+  max-width: fit-content;
+  padding: 10px;
+  border-radius: 5px;
+  border-color: #28cbbe;
+  border-width: 1px;
+  background-color: #099e92;
+  color: white;
+}
+
+
+/* PROFILE2 */
+.profile2 {
+  margin-top: 120px;
+  margin-left:155px;
+  background-color: #099e92;
+  width:83%;
+  height: 40px;
+  position:fixed;
+  border-radius: 3px;
+}
+
+.profile2 p{
+	padding: 10px;
+	font-weight: 800;
+	color:white;
+	size: 20px;
+}
+
+.btn1{
+  margin-left: 150px;
+  margin-top: 20px;
+  max-width: fit-content;
+  padding: 10px;
+  border-radius: 5px;
+  border-color: #28cbbe;
+  border-width: 1px;
+  background-color: #099e92;
+  color: white;
+}
+
+/* profile3 */
+.profile3 {
+  margin-top: 80px;
+  margin-left:155px;
+  background-color: #099e92;
+  width:83%;
+  height: 40px;
+  position:fixed;
+  border-radius: 3px;
+}
+
+.profile3 p{
+	padding: 10px;
+	font-weight: 800;
+	color:white;
+	size: 20px;
+}
+
+/* profile 4 */
+.profile4 {
+  margin-top: 80px;
+  margin-left:155px;
+  background-color: #099e92;
+  width:83%;
+  height: 40px;
+  position:fixed;
+  border-radius: 3px;
+}
+
+.profile4 p{
+	padding: 10px;
+	font-weight: 800;
+	color:white;
+	size: 20px;
+}
+
+/* profile5 */
+
+.profile5 {
+  margin-top: 80px;
+  margin-left:155px;
+  background-color: #099e92;
+  width:83%;
+  height: 40px;
+  position:fixed;
+  border-radius: 3px;
+}
+
+.profile5 p{
+	padding: 10px;
+	font-weight: 800;
+	color:white;
+	size: 20px;
+}
+
+/* profile6 */
+
+
+
+/* profile7 */
+@media only screen and (max-width: 600px) {
+	.body {
+		max-width: 100%;
+	}
+}

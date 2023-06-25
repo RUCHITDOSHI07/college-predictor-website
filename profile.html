@@ -1,0 +1,87 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="stylesheet" href="style.css">
+    <title>Document</title>
+</head>
+<body>
+    <nav class="navbar">
+        <img src="final pic.png">
+    </nav>
+    <div class="header">
+    <input type="checkbox" id="opensidebarmenu"> 
+    <label for="opensidebarmenu" class="sidebarToggle">
+        <div class="spinner top"></div>
+        <div class="spinner mid"></div>
+        <div class="spinner bottom"></div>
+    </label>
+        <div  id="sidebarmenu">
+            <ul class="menu">
+                <!-- <li><a href="homepage.html">Home</a></li> -->
+                <li><a href="#">Admin login</a></li>
+                <li><a href="login.html">Registered Candidate Login</a></li>
+                <li><a href="#">Important Links</a></li>
+                <li><a href="#">View Score Card(PCM)</a></li>
+                <li><a href="#">View Score Card(PCB)</a></li>
+            </ul>
+        </div>
+        <nav class="horizontalmenu">
+            <ul>
+                <li><a href = "homepage.html">Home</a></li>
+                <li><a href = "#">Important Dates</a></li>
+                <li><a href = "#">Notifications</a></li>
+                <li><a href = "#">Downloads</a></li>
+                <li><a href = "#">Contact us</a></li>
+                <li><a href = "signup.html">sign up</a></li>
+
+            </ul>
+        </nav>
+    </div>
+    <div class="main">
+    </div>
+    <div class="profile">
+       <!-- <p>MHT-CET 2023 DETAILS</p> -->
+        <form action="/action_page.php">
+            <br>
+            <br>
+            <br>
+            <br>
+            <p>MHT-CET 2023 DETAILS</p>
+            <br>
+            <p>Have you appeared for MHT-CET 2023 ?</p>
+            <input type="radio" id="Yes" name="appear_cet" value="Yes">
+            <label for="Yes">Yes</label><br>
+           <input type="radio" id="No" name="appear_cet" value="No">
+            <label for="No">No</label><br>
+          
+          <p>Have you appeared for JEE(Main) Paper-1 NTA Score ?</p>
+          <input type="radio" id="Yes" name="appear_jeemain" value="Yes">
+            <label for="Yes">Yes</label>
+           <input type="radio" id="No" name="appear_jeemain" value="No">
+            <label for="No">No</label><br>
+
+          <p>Are you Foreign National/ NRI/ PIO/ OCI/ CIWOC/ NEUT/ JKSSS Candidate ?</p>
+          <input type="radio" id="Yes" name="nationality" value="Yes">
+            <label for="Yes">Yes</label>
+           <input type="radio" id="No" name="nationality" value="No">
+            <label for="No">No</label><br>
+
+          <p>Qualifying Exam : </p>
+          <input type="radio" id="HSC" name="exam" value="HSC">
+            <label for="HSC">HSC</label>
+           <input type="radio" id="Diploma" name="exam" value="Diploma">
+            <label for="Diploma">Diploma in Engineering and Technology</label><br>
+
+        </form>
+
+        
+        <button onclick="document.location='profile1.html'" class="btn1" >NEXT</button>
+    </div>
+</body>
+</html>
+
+
+  
